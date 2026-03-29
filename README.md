@@ -66,4 +66,4 @@ transform: translateX(0);
 
 # APRENDIZADO
 
-Procurando vídeos sobre no youtube, estava com um problema de responsividade, a nav-list ficava pra fora do body quando a tela tava em 999px, foi aí que usei a <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"> e resolveu o problema para mim.
+Procurando vídeos sobre no youtube, estava com um problema de responsividade, a nav-list ficava pra fora do body quando a tela tava em 999px, foi aí que usei a meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"> e resolveu o problema para mim.
