@@ -24,14 +24,26 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
-    height: 8vh;
+    background: #23232e; 
+    height: 14vh;
 }
 
 main {
-    background: url(../paisagem_navbar.jpg) no-repeat center center;
+    background: url(../professorjuliano-e-aluno.jpg) no-repeat center center;
     background-size: cover;
-    height: 92vh;
+    height: 86vh;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    background: #fff;
+    width: 32px;
+    height: 2px;
+    margin: 8px;
 }
 
 .nav-list {
@@ -42,6 +54,38 @@ main {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;    
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 14vh;
+        right: 0;
+        background: #23232e;
+        height: 86vh;
+        width: 50vw;
+        flex-direction: column;
+        align-items: center; /* Eixo muda quando coluna  */
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+        transform: translateX(0);
 }
 
 
