@@ -63,7 +63,7 @@ main {
     }
 
     .nav-list {
-        position: absolute;
+        position: fixed;
         top: 14vh;
         right: 0;
         background: #23232e;
