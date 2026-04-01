@@ -58,8 +58,9 @@ main {
 }
 
 @media (max-width: 999px) {
-    html, body {
+    .page-wrapper {
         overflow-x: hidden;    
+        position: relative;
     }
 
     .nav-list {
